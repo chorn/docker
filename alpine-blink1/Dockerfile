@@ -11,4 +11,4 @@ RUN rm -fr /usr/src/blink1 /var/cache/apk
 EXPOSE 8080
 
 # ENTRYPOINT ["sh"]
-ENTRYPOINT ["blink1-tiny-server -p 8080"]
+ENTRYPOINT ["blink1-tiny-server",  "-p", "8080"]
