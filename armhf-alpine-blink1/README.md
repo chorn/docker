@@ -1,4 +1,4 @@
-# alpine-armhf-blink1
+# armhf-alpine-blink1
 
 Alpine Linux for armhf with blink1-tool and blink1-tiny-server.
 
@@ -39,7 +39,5 @@ id:0 - serialnum:{{your blink serial number}} (mk2)
 1. [Alpine Linux](http://alpinelinux.org)
 2. [blink(1)](blink1.thingm.com)
 3. [Offical blink(1) Tools](https://github.com/todbot/blink1)
-4. [container4armhf/armhf-alpine](https://hub.docker.com/r/container4armhf/armhf-alpine/)
-5. [m3adow/armhf_docker_base_images](https://github.com/m3adow/armhf_docker_base_images)
-
+4. [armhf/alpine](https://hub.docker.com/r/armhf/alpine)
 
