@@ -4,6 +4,10 @@ Alpine Linux with blink1-tool and blink1-tiny-server.
 
 ## Usage
 
+```
+$ docker pull chorn/alpine-blink1
+```
+
 Your Docker host probably needs to have `lsusb` and `udev` installed. On most Linux distributions they'll be there by default.
 
 ```
