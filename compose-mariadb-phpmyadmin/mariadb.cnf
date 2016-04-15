@@ -1,0 +1,8 @@
+[client]
+default-character-set  = utf8
+
+[mysqld]
+log-bin = off
+#default-time-zone      = 'US/Eastern'
+character-set-server   = utf8
+collation-server       = utf8_general_ci

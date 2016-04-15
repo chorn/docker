@@ -1,0 +1,33 @@
+version: '2'
+
+services:
+  db:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=no
+      - MYSQL_ROOT_PASSWORD=adminadminadmin
+      - MYSQL_DATABASE=phpmyadmin
+      - TERM=dumb
+    volumes:
+      - ./datadir:/var/lib/mysql
+      - ./mariadb.cnf:/etc/mysql/conf.d/mariadb.cnf
+    logging:
+      driver: none
+
+  admin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      - PMA_ARBITRARY=0
+      - PMA_USER=root
+      - PMA_PASSWORD=adminadminadmin
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    logging:
+      driver: none
+
